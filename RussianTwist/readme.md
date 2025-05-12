@@ -75,9 +75,6 @@ Normalizing the Value
 
 The raw angles are clamped and normalized to ensure consistent behavior across different body types and camera angles:
 
-swift
-
-CopyEdit
 
 `let clampedAngle = min(max(angle, minAngle), maxAngle)
 let normalizedValue = (clampedAngle - minAngle) / (maxAngle - minAngle)`
@@ -97,9 +94,6 @@ We use:
 
 -   A text overlay that displays the **rep count** and feedback
 
-swift
-
-CopyEdit
 
 `Text("\(count) twists")
 Text(feedbackText)`
