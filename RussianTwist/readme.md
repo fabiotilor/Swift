@@ -18,6 +18,13 @@ What This App Does
 
 * * * * *
 
+### Demo Video
+Here’s a demo of the app in action:
+
+[Watch the demo video](https://github.com/fabiotilor/Swift/blob/main/RussianTwist/Demo.mov)
+
+* * * * *
+
 How the Counter Logic Works
 ------------------------------
 
