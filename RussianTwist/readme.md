@@ -1,11 +1,11 @@
-🏋️‍♂️ Custom Exercise Repetition Counter (Russian Twist) using QuickPose in SwiftUI
+Custom Exercise Repetition Counter (Russian Twist) using QuickPose in SwiftUI
 ====================================================================================
 
 This SwiftUI project shows how to use the **QuickPose SDK** to implement a **custom repetition counter** for exercises. It focuses on **Russian Twists**, but the same technique can be extended to other movements.
 
 * * * * *
 
-✨ What This App Does
+What This App Does
 --------------------
 
 -   Tracks the user's body in real time via camera or simulated video
@@ -18,10 +18,10 @@ This SwiftUI project shows how to use the **QuickPose SDK** to implement a **
 
 * * * * *
 
-🧠 How the Counter Logic Works
+How the Counter Logic Works
 ------------------------------
 
-### 📦 `QuickPoseThresholdCounter`
+### `QuickPoseThresholdCounter`
 
 The rep counter works using a **threshold-enter-exit pattern** that mimics human motion:
 
@@ -33,7 +33,7 @@ The rep counter works using a **threshold-enter-exit pattern** that mimics hum
 
 Each cycle of entering and then exiting the pose counts as **one repetition**.
 
-#### 🚦 States
+#### States
 
 The counter returns a `CountState` enum with:
 
@@ -45,7 +45,7 @@ We also provide animations when `.poseComplete` is triggered, using SwiftUI.
 
 * * * * *
 
-🎯 Constructing the Tracking Feature
+Constructing the Tracking Feature
 ------------------------------------
 
 We use:
@@ -70,7 +70,7 @@ You can customize:
 
 * * * * *
 
-🧪 Normalizing the Value
+Normalizing the Value
 ------------------------
 
 The raw angles are clamped and normalized to ensure consistent behavior across different body types and camera angles:
@@ -86,7 +86,7 @@ This converts any raw angle into a value between 0 and 1, suitable for threshold
 
 * * * * *
 
-📲 UI and Feedback
+UI and Feedback
 ------------------
 
 We use:
@@ -108,7 +108,7 @@ SwiftUI's animation API adds visual cues when a rep is counted (e.g., scaling ef
 
 * * * * *
 
-🛠️ Customizing for Other Exercises
+Customizing for Other Exercises
 -----------------------------------
 
 To adapt this for another movement:
@@ -135,16 +135,12 @@ See the `QuickPose.Feature` enum for all supported types.
 
 * * * * *
 
-✅ How to Run
+How to Run
 ------------
 
 1.  Clone the repo
 
 2.  Replace with your QuickPose SDK key:
-
-    swift
-
-    CopyEdit
 
     `var quickPose = QuickPose(sdkKey: "YOUR_SDK_KEY_HERE")`
 
